@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch site",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [ "run-script", "start" ],
+      "serverReadyAction": {
+        "pattern": "Hit CTRL-C to stop",
+        "uriFormat": "http://localhost:8080",
+        "action": "openExternally"
+      }
+    }
+  ]
+}
